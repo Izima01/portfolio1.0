@@ -1,34 +1,34 @@
-import { AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import './Home.css';
 
 const Social = () => {
   return (
     <div className='home_social grid gap-y-4'>
         <a
-          href="https://wwww.instagram.com/"
+          href="https://ng.linkedin.com/in/obisike-izima-443aa7197"
           className="home_social-icon text-xl text-[#333333]"
           rel='noreferrer'
           target="_blank"
         >
-          <AiOutlineInstagram />
+          <AiOutlineLinkedin className='text-xl' />
         </a>
 
         <a
-          href="https://wwww.twitter.com/"
+          href="https://twitter.com/IzimaObisike?t=oZIeCnWiHOFPg9xwEWCEUg&s=09"
           className="home_social-icon text-xl text-[#333333]"
           rel='noreferrer'
           target="_blank"
         >
-          <AiOutlineTwitter />
+          <AiOutlineTwitter className='text-xl' />
         </a>
         
         <a
-          href="https://wwww.github.com/"
+          href="https://wwww.github.com/izima01"
           className="home_social-icon text-xl text-[#333333]"
           rel='noreferrer'
           target="_blank"
         >
-          <AiOutlineGithub />
+          <AiOutlineGithub className='text-xl' />
         </a>
     </div>
   )
