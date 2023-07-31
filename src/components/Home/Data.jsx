@@ -5,7 +5,7 @@ import './Home.css';
 const Data = () => {
   return (
     <div className="home_data">
-        <h1 className="font-semibold text-[2.75rem] mb-1">
+        <h1 className="font-semibold text-4xl sm:text-[2.75rem] mb-1">
             Izima Obisike
             <img src={hand} alt="a hand" className='lg:w-9 lg:h-9 w-7 h-7 ml-2 inline-block' />
         </h1>

@@ -1,6 +1,6 @@
 import '../../App.css';
 import aboutImg from '../../assets/about.jpg';
-import CV from '../../assets/John-Cv.pdf';
+import CV from '../../assets/Resume-Obisike-Izima.pdf';
 import Info from './Info';
 import file from '../../assets/files.svg';
 import './About.css';
@@ -16,7 +16,7 @@ const About = () => {
             <div className='about_data lg:text-left text-center'>
                 <Info />
 
-                <p className='about_desc p-0 sm:py-0 sm:px-20 lg:pr-16 lg:pl-0 mb-8 lg:mb-10'>Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+                {/* <p className='about_desc p-0 sm:py-0 sm:px-20 lg:pr-16 lg:pl-0 mb-8 lg:mb-10'>Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p> */}
                 
                 <a href={CV} download='' className="button button--flex inline-flex gap-2">
                     Download CV
