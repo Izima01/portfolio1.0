@@ -1,4 +1,4 @@
-import { AiOutlineGithub, AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai"
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai"
 
 const Footer = () => {
   return (
@@ -22,30 +22,30 @@ const Footer = () => {
 
             <div className="footer_social">
                 <a
-                    href="https://wwww.instagram.com/"
-                    className="home_social-icon text-xl text-[#333333]"
+                    href="https://ng.linkedin.com/in/obisike-izima-443aa7197"
+                    className="home_social-icon  text-[#333333]"
                     rel='noreferrer'
                     target="_blank"
                 >
-                    <AiOutlineInstagram />
+                    <AiOutlineLinkedin className='text-2xl sm:text-xl' />
                 </a>
 
                 <a
-                    href="https://wwww.twitter.com/"
-                    className="home_social-icon text-xl text-[#333333]"
+                    href="https://twitter.com/IzimaObisike?t=oZIeCnWiHOFPg9xwEWCEUg&s=09"
+                    className="home_social-icon  text-[#333333]"
                     rel='noreferrer'
                     target="_blank"
                 >
-                    <AiOutlineTwitter />
+                    <AiOutlineTwitter className='text-2xl sm:text-xl' />
                 </a>
                     
                 <a
-                    href="https://wwww.github.com/"
-                    className="home_social-icon text-xl text-[#333333]"
+                    href="https://www.github.com/izima01"
+                    className="home_social-icon  text-[#333333]"
                     rel='noreferrer'
                     target="_blank"
                 >
-                    <AiOutlineGithub />
+                    <AiOutlineGithub className='text-2xl sm:text-xl' />
                 </a>
             </div>
         </div>
