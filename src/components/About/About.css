@@ -1,0 +1,27 @@
+.about_info {
+    grid-template-columns: repeat(2, 180px);
+}
+
+.about_container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .about_info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    
+}

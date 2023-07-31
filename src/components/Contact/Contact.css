@@ -1,0 +1,32 @@
+.contact_container {
+    grid-template-columns: repeat(2, max-content);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+    /* .contact_container {
+        grid-template-columns: 3rem;
+    } */
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .contact_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    :root {
+        --big-font-size: 2.25rem;
+    }
+
+    .c {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
