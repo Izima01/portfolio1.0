@@ -11,8 +11,8 @@ const About = () => {
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">My Introduction</span>
 
-        <div className="about_container grid items-center lg:gap-x-16 gap-y-10 lg:gap-y-0">
-            <img src={aboutImg}  alt="" className='about_Img rounded-3xl justify-self-center w-56 lg:w-[22rem]' />
+        <div className="about_container grid items-center md:gap-x-12 gap-y-10">
+            <img src={aboutImg}  alt="" className='about_Img rounded-3xl justify-self-center w-56 md:w-[22rem]' />
             <div className='about_data lg:text-left text-center'>
                 <Info />
 

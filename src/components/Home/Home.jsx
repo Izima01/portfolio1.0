@@ -2,7 +2,7 @@ import Data from "./Data"
 import Social from "./Social"
 import './Home.css';
 import '../../App.css';
-// import ScrollDown from "./ScrollDown";
+import ScrollDown from "./ScrollDown";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
                 <Data />
             </div>
 
-            {/* <ScrollDown /> */}
+            <ScrollDown />
         </div>
     </section>
   )

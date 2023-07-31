@@ -8,7 +8,7 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .about_container {
         grid-template-columns: 1fr;
     }
