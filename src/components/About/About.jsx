@@ -1,5 +1,5 @@
 import '../../App.css';
-import aboutImg from '../../assets/about.jpg';
+import aboutImg from '../../assets/about.jpeg';
 import CV from '../../assets/Resume-Obisike-Izima.pdf';
 import Info from './Info';
 import file from '../../assets/files.svg';
