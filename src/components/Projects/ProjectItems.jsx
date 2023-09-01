@@ -20,7 +20,7 @@ const ProjectItems = ({ title, image, stack, description, github, live, id }) =>
                         <AiOutlineGithub className='pl-2 text-2xl' />
                     </a>
 
-                    <a href={live} className='inline-flex items-center no-underline text-lg border border-slate-200 bg-slate-500 rounded-lg hover:bg-slate-300 text-white px-5 py-2'>
+                    <a rel='noreferrer' target='_blank' href={live} className='inline-flex items-center no-underline text-lg border border-slate-200 bg-slate-500 rounded-lg hover:bg-slate-300 text-white px-5 py-2'>
                         Visit site
                     </a>
                 </div>
