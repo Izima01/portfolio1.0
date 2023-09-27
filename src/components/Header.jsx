@@ -43,7 +43,7 @@ const Header = () => {
                     {navs.map(({name, link, icon}, i) => {
                         return (
                             <li className="" key={i}>
-                                <motion.a initial={{ x:i*-160, opacity: 0 }} animate={{ x:0, opacity:1 }} transition={{ delay: 1, duration: 0.25*i }} href={link} className="group flex flex-col md:flex-row items-center text-[#333333] font-medium transition duration-300 hover:text-black active:text-black">
+                                <motion.a initial={{ x:i*-140, opacity: 0 }} animate={{ x:0, opacity:1 }} transition={{ delay: 1, duration: 0.25*i }} href={link} className="group flex flex-col md:flex-row items-center text-[#333333] font-medium transition duration-300 hover:text-black active:text-black">
                                     {icon}
                                     <span className='group-hover:font-semibold transition-all duration-300 ease-in-out'>{name}</span>
                                 </motion.a>

@@ -3,7 +3,7 @@ import ProjectItems from "./ProjectItems";
 
 const Projects = () => {
   return (
-    <section id="projects" className="work section">
+    <section id="projects" className="work section overflow-x-hidden">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most recent projects</span>
         <div className="work__container cont flex flex-col gap-8">

@@ -9,8 +9,8 @@ export const projectsData = [
     {
         id: 1,
         image: work4,
-        title: 'Music Player Appp',
-        stack: ['React', 'TailwindCSS','Axios', 'React Context', ],
+        title: 'Music Player App',
+        stack: ['React', 'TailwindCSS','Axios', 'React Context', 'Rest API'],
         description: 'A music palyer app developed with React. I consumed a custom API and used it to display the songs and albums. You can play, pause, shuffle. Also like songs and view the liked songs',
         github: 'https://www.github.com/Izima01/Musica',
         live: 'https://izzycodes-musica.netlify.app/'
@@ -19,7 +19,7 @@ export const projectsData = [
         id: 2,
         image: work3,
         title: 'Rest Countries API',
-        stack: ['HTML', 'CSS', 'JavaScript', 'API'],
+        stack: ['HTML', 'CSS', 'JavaScript', 'Rest API'],
         description: 'A web app of all the countries of the world. I consumed Restcountries API and sorted and filtered the countries. You can open a details page for each country and open details for the border countries on the details page',
         github: 'https://www.github.com/Izima01/Rest-Countries-API',
         live: 'https://artsy-marketplace.netlify.app/'

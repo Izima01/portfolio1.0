@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
 import { AiOutlineGithub } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const ProjectItems = ({ title, image, stack, description, github, live, id }) => {
     console.log(id%2);
     return (
-        <article className={`flex gap-4 items-center flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-3 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full`}>
-            <img src={image} alt="" className="w-full md:w-7/12 md:h-80" />
+        <article className={`overflow-hidden flex gap-4 items-center flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-3 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full`}>
+            <motion.img initial={{ visibility: 'hidden', y: 200 }}  whileInView={{ visibility: 'visible', y:0 }} transition={{ type:'spring', delay: 1 }} src={image} alt="" className="w-full md:w-7/12 md:h-80" />
             <div className="card_body w-full md:w-5/12 p-2">
-                <h3 className="text-2xl font-semibold text-black mb-6">{title}</h3>
+                <motion.h3 initial={{ y:50 }}  whileInView={{ y:0 }} transition={{ type: 'spring', delay: 1 }} className="text-2xl font-semibold text-black mb-6">{title}</motion.h3>
                 <p className="text-[#757575] mb-3">{description}</p>
-                <ul className="flex gap-2 mb-8 flex-wrap">
+                <ul className="flex gap-2.5 mb-8 flex-wrap">
                     {stack.map((st, i) => (
-                        <li className="px-5 py-1 bg-white rounded-md shadow-md shadow-slate-300" key={i}>{st}</li>
+                        <motion.li initial={{ x: 50+(10*i) }}  whileInView={{ x:0 }} transition={{ delay:0.7, duration:(i+1)*0.3 }} className="px-5 py-1 bg-white rounded-md shadow-md shadow-slate-300" key={i}>{st}</motion.li>
                     ))}
                 </ul>
                 <div className='flex gap-6'>
