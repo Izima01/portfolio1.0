@@ -2,6 +2,7 @@ import { BiLogoCss3, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoReact, B
 import { SiChakraui, SiBootstrap } from 'react-icons/si';
 import './Skills.css';
 import firebase from '../../assets/firebase.png';
+import { motion } from 'framer-motion';
 
 const skills = [
     {name: 'HTML', icon: <BiLogoHtml5 className='text-[#e34c26] text-5xl' /> },
@@ -21,11 +22,10 @@ const Frontend = () => {
     <div className="skills__content ">
         <div className="skills__group flex flex-wrap justify-center gap-6 mt-6 w-full sm:w-10/12 mx-auto">
             {skills.map(({name, icon}, i) => (
-                <div key={i} className="skills__data flex items-center justify-center flex-col gap-2 loading-card shadow-md py-3 px-8 w-auto sm:px-8 rounded-xl">
-                {/* <BiLogoHtml5 className=' text-5xl text-slate-600' /> */}
+                <motion.div key={i} initial={{ scale:0, opacity: 0, borderRadius:'100%' }} transition={{ type: 'spring', delay:0.1*i, duration:0.1*i }} whileInView={{ scale:1, opacity:1, borderRadius: '12px' }} className="skills__data flex items-center justify-center flex-col gap-2 loading-card shadow-md py-3 px-8 w-auto sm:px-8 rounded-xl">
                 {icon}
                 <h3 className="skill_name text-lg leading-5 font-semibold">{name}</h3>
-            </div>
+            </motion.div>
             ))}
             
             
