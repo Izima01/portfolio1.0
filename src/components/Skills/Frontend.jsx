@@ -22,7 +22,7 @@ const Frontend = () => {
     <div className="skills__content ">
         <div className="skills__group flex flex-wrap justify-center gap-6 mt-6 w-full sm:w-10/12 mx-auto">
             {skills.map(({name, icon}, i) => (
-                <motion.div key={i} initial={{ scale:0, opacity: 0, borderRadius:'100%' }} transition={{ type: 'spring', delay:0.2*i, duration:1 }} whileInView={{ scale:1, opacity:1, borderRadius: '12px' }} className="skills__data flex items-center justify-center flex-col gap-2 loading-card shadow-md py-3 px-8 w-auto sm:px-8 rounded-xl">
+                <motion.div key={i} initial={{ scale:0, opacity: 0, borderRadius:'100%' }} transition={{ type: 'spring', delay:0.15*i, duration: 1 }} whileInView={{ scale:1, opacity:1, borderRadius: '12px' }} className="skills__data flex items-center justify-center flex-col gap-2 loading-card shadow-md py-3 px-8 w-auto sm:px-8 rounded-xl">
                 {icon}
                 <h3 className="skill_name text-lg leading-5 font-semibold">{name}</h3>
             </motion.div>
