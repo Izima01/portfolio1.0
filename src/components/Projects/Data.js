@@ -4,8 +4,18 @@ import work3 from '../../assets/work3.jpg';
 import work4 from '../../assets/work4.jpg';
 import work5 from '../../assets/work5.jpg';
 import work6 from '../../assets/work6.png';
+import work7 from '../../assets/work7.png';
 
 export const projectsData = [
+    {
+        id: 5,
+        image: work5,
+        title: 'NFT E-Commerce App',
+        stack: ['React', 'TailwindCSS', 'Redux Toolkit', 'Framer Motion', 'Firebase'],
+        description: 'An E-commerce app for NFTs where the data is gotten from Firebase. In the marketplace, you can sort and filter the products according to price, category e.t.c. You can add to cart and view your cart',
+        github: 'https://www.github.com/Izima01/artsy-marketplace',
+        live: 'https://artsy-marketplace.netlify.app/'
+    },
     {
         id: 1,
         image: work4,
@@ -34,6 +44,15 @@ export const projectsData = [
         live: 'https://fe-mentor-multi-step-form.netlify.app/'
     },
     {
+        id: 7,
+        image: work7,
+        title: 'MovieBox site',
+        stack: ['React', 'TailwindCSS', 'Axios'],
+        description: 'As site that shows differet top movies and the different details about them',
+        github: 'https://github.com/Izima01/moviebox',
+        live: 'https://hng-moviebox.netlify.app/'
+    },
+    {
         id: 4,
         image: work2,
         title: 'Crypto website landing page',
@@ -41,15 +60,6 @@ export const projectsData = [
         description: 'A landing page for a cryptocurrency currency. One of my first projects on React',
         github: 'https://www.github.com/Izima01/Crappo',
         live: 'https://crappo-challengeizzy.netlify.app/'
-    },
-    {
-        id: 5,
-        image: work5,
-        title: 'NFT E-Commerce App',
-        stack: ['React', 'TailwindCSS', 'Redux Toolkit', 'Framer Motion', 'Firebase'],
-        description: 'An E-commerce app for NFTs where the data is gotten from Firebase. In the marketplace, you can sort and filter the products according to price, category e.t.c. You can add to cart and view your cart',
-        github: 'https://www.github.com/Izima01/artsy-marketplace',
-        live: 'https://artsy-marketplace.netlify.app/'
     },
     {
         id: 6,
