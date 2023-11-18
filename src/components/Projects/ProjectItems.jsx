@@ -6,7 +6,7 @@ const ProjectItems = ({ title, image, stack, description, github, live, id }) =>
     console.log(id%2);
     return (
         <article className={`overflow-hidden flex gap-4 items-center flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-3 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full`}>
-            <motion.img initial={{ visibility: 'hidden', y: 100 }}  animate={{ visibility: 'visible', y:0 }} transition={{ type:'spring', delay: 0.25 }} src={image} alt="" className="w-full md:w-7/12 md:h-80" />
+            <motion.img loading='lazy' initial={{ visibility: 'hidden', y: 100 }}  animate={{ visibility: 'visible', y:0 }} transition={{ type:'spring', delay: 0.25 }} src={image} alt="" className="w-full md:w-7/12 md:h-80" />
             <div className="card_body w-full md:w-5/12 p-2">
                 <h3 className="text-2xl font-semibold text-black mb-6">{title}</h3>
                 <p className="text-[#757575] mb-3">{description}</p>

@@ -14,7 +14,7 @@ const skills = [
     {name: 'Javascript', icon: <BiLogoJavascript stroke='black' className='text-[#f1dc4f] text-5xl' /> },
     {name: 'React', icon: <BiLogoReact className='text-[#149fca] text-5xl' /> },
     {name: 'Redux', icon: <BiLogoRedux className='text-[#764abd] text-5xl' /> },
-    {name: 'Firebase', icon: <img src={firebase} className='w-12' /> },
+    {name: 'Firebase', icon: <img src={firebase} loading="lazy" className='w-12' /> },
 ];
 
 const Frontend = () => {

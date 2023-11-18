@@ -102,7 +102,7 @@ const Contact = () => {
 
                         <button className='button inline-flex items-center gap-x-2'>
                             Send Message
-                            <img src={send} alt="" className='w-6 lg:w-auto h-6 lg:h-auto' />
+                            <img loading="lazy" width={24} height={24} src={send} alt="" className='lg:w-auto lg:h-auto' />
                         </button>
                     </form>
                 </div>
