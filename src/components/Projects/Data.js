@@ -5,8 +5,27 @@ import work4 from '../../assets/work4.jpg';
 import work5 from '../../assets/work5.jpg';
 import work6 from '../../assets/work6.png';
 import work7 from '../../assets/work7.png';
+import work8 from '../../assets/work8.png';
 
 export const projectsData = [
+    {
+        id: 8,
+        image: work8,
+        title: 'Talkative Chat App',
+        stack: ['React', 'TailwindCSS', 'Zustand', 'TypeScript', 'RestAPI', 'Socket.io'],
+        description: 'A full stack chat app where you can chat personally. You can create group chats, add or remove people on it and chat. Real-time notifications with SocketIO and fully responsive',
+        github: 'https://github.com/Izima01/talkative-chat/',
+        live: 'https://talkative-chat.vercel.app/'
+    },
+    {
+        id: 9,
+        image: work8,
+        title: 'Talkative Chat App',
+        stack: ['React', 'TailwindCSS', 'UseContext', 'RestAPI'],
+        description: 'A full stack E-Learning app where you can find E-books, VIdeos and full on courses to learn and upskill. You can authenticate and register on these courses and take them',
+        github: 'https://github.com/Izima01/',
+        live: 'https://mellow-longma-801e80.netlify.app/'
+    },
     {
         id: 5,
         image: work5,
