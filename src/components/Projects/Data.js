@@ -6,6 +6,7 @@ import work5 from '../../assets/work5.jpg';
 import work6 from '../../assets/work6.png';
 import work7 from '../../assets/work7.png';
 import work8 from '../../assets/work8.png';
+import work9 from '../../assets/work9.png';
 
 export const projectsData = [
     {
@@ -19,8 +20,8 @@ export const projectsData = [
     },
     {
         id: 9,
-        image: work8,
-        title: 'Talkative Chat App',
+        image: work9,
+        title: 'E-Learning App',
         stack: ['React', 'TailwindCSS', 'UseContext', 'RestAPI'],
         description: 'A full stack E-Learning app where you can find E-books, VIdeos and full on courses to learn and upskill. You can authenticate and register on these courses and take them',
         github: 'https://github.com/Izima01/',
