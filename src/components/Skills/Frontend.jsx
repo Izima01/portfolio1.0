@@ -2,7 +2,9 @@ import { BiLogoCss3, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoReact, B
 import { SiChakraui, SiBootstrap } from 'react-icons/si';
 import './Skills.css';
 import firebase from '../../assets/firebase.png';
+import supabase from '../../assets/supabase-seeklogo.svg';
 import { motion } from 'framer-motion';
+import { SiNextdotjs } from "react-icons/si";
 
 const skills = [
     {name: 'HTML', icon: <BiLogoHtml5 size={48} className='text-[#e34c26]' /> },
@@ -13,8 +15,10 @@ const skills = [
     {name: 'Git', icon: <BiLogoGithub size={48} className='text-black' /> },
     {name: 'Javascript', icon: <BiLogoJavascript stroke='black' size={48} className='text-[#f1dc4f]' /> },
     {name: 'React', icon: <BiLogoReact size={48} className='text-[#149fca]' /> },
+    {name: 'Next JS', icon: <SiNextdotjs size={48} /> },
     {name: 'Redux', icon: <BiLogoRedux size={48} className='text-[#764abd]' /> },
     {name: 'Firebase', icon: <img src={firebase} loading="lazy" width={48} /> },
+    {name: 'SupaBase', icon: <img src={supabase} width={48} height={48} alt="" /> },
 ];
 
 const Frontend = () => {

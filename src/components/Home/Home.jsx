@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unknown-property */
 import Data from "./Data"
 import Social from "./Social"
 import './Home.css';
 import '../../App.css';
 import ScrollDown from "./ScrollDown";
-import { motion } from "framer-motion";
+import imgaa from '../../assets/about.webp'
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
         <div className="max-w-[968px] px-8 lg:px-0 mx-auto grid gap-6 gap-y-16 ">
             <div className="grid lg:gap-x-8 gap-x-5 pt-6 sm:pt-14 md:pt-16 items-center home_content">
                 <Social />
-                <motion.div setpriority="true" initial={{ y:-300, visibility: 'hidden', rotate: 60 }} whileInView={{ y:[-300, -100, -10, -45, 0], visibility: 'visible', rotate: 0 }} transition={{delay: 0.5, duration: 1 }} className="home_img bg-no-repeat h-52 sm:h-64 lg:h-80 w-52 sm:w-64 lg:w-80 order-[initial] md:order-1 md:justify-self-center" />
+                <img src={imgaa} alt="" fetchpriority="high" className="rounded-2xl order-[initial] md:order-1" width={480} height={420} />
                 <Data />
             </div>
 

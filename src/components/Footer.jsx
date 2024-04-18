@@ -48,7 +48,7 @@ const Footer = () => {
                     <AiOutlineGithub className='text-2xl sm:text-xl' />
                 </a>
             </div>
-            <span className="footer_copy"></span>
+            {/* <span className="footer_copy"></span> */}
         </div>
     </footer>
   )

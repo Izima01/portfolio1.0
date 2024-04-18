@@ -1,19 +1,29 @@
-import work1 from '../../assets/work1.jpg';
-import work2 from '../../assets/work2.jpg';
-import work3 from '../../assets/work3.jpg';
-import work4 from '../../assets/work4.jpg';
-import work5 from '../../assets/work5.jpg';
-import work6 from '../../assets/work6.png';
-import work7 from '../../assets/work7.png';
-import work8 from '../../assets/work8.png';
-import work9 from '../../assets/work9.png';
+import work1 from '../../assets/work1.webp';
+import work2 from '../../assets/work2.webp';
+import work3 from '../../assets/work3.webp';
+import work4 from '../../assets/work4.webp';
+import work5 from '../../assets/work5.webp';
+import work6 from '../../assets/work6.webp';
+import work7 from '../../assets/work7.webp';
+import work8 from '../../assets/work8.webp';
+import work9 from '../../assets/work9.webp';
+import work10 from '../../assets/work10.png';
 
 export const projectsData = [
+    {
+        id: 10,
+        image: work10,
+        title: 'RenCostume Web App',
+        stack: ['React', 'Zustand', 'SupaBase'],
+        description: 'An e-commerce web app to rent and buy costumes for acting or parties.',
+        github: 'https://github.com/Razeetech/RENCOSTUME',
+        live: 'https://www.rencostume.com/'
+    },
     {
         id: 8,
         image: work8,
         title: 'Talkative Chat App',
-        stack: ['React', 'TailwindCSS', 'Zustand', 'TypeScript', 'RestAPI', 'Socket.io'],
+        stack: ['React', 'TailwindCSS', 'Zustand', 'TypeScript', 'MongoDB', 'Express JS', 'Node JS', 'Socket.io'],
         description: 'A full stack chat app where you can chat personally. You can create group chats, add or remove people on it and chat. Real-time notifications with SocketIO and fully responsive',
         github: 'https://github.com/Izima01/talkative-chat/',
         live: 'https://talkative-chat.vercel.app/'
@@ -22,8 +32,8 @@ export const projectsData = [
         id: 9,
         image: work9,
         title: 'E-Learning App',
-        stack: ['React', 'TailwindCSS', 'UseContext', 'RestAPI'],
-        description: 'A full stack E-Learning app where you can find E-books, VIdeos and full on courses to learn and upskill. You can authenticate and register on these courses and take them',
+        stack: ['React', 'TailwindCSS', 'UseContext', 'MongoDB', 'Express JS', 'Node JS'],
+        description: 'A full stack E-Learning app where you can find E-books, VIdeos and full on courses to learn and upskill.',
         github: 'https://github.com/Izima01/',
         live: 'https://mellow-longma-801e80.netlify.app/'
     },
@@ -32,7 +42,7 @@ export const projectsData = [
         image: work5,
         title: 'NFT E-Commerce App',
         stack: ['React', 'TailwindCSS', 'Redux Toolkit', 'Framer Motion', 'Firebase'],
-        description: 'An E-commerce app for NFTs where the data is gotten from Firebase. In the marketplace, you can sort and filter the products according to price, category e.t.c. You can add to cart and view your cart',
+        description: 'An E-commerce app for NFTs In the marketplace, you can sort and filter the products and add to cart',
         github: 'https://www.github.com/Izima01/artsy-marketplace',
         live: 'https://artsy-marketplace.netlify.app/'
     },
