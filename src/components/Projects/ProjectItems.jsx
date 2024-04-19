@@ -3,7 +3,7 @@ import { AiOutlineGithub } from 'react-icons/ai';
 
 const ProjectItems = ({ title, image, stack, description, github, live, id }) => {
     return (
-        <article className={`overflow-hidden flex gap-4 items-center md:items-stretch flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-2 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full h-[21rem]`}>
+        <article className={`overflow-hidden flex gap-4 items-center md:items-stretch flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-2 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full md:h-[21rem]`}>
             <img
                 width={560}
                 // height={340}
