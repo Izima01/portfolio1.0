@@ -1,0 +1,137 @@
+.star {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    /* background-color: #080808; */
+    background-color: #080808;
+    border-radius: 50%;
+    box-sizing: 0 0 0 6px rgba(255, 255, 255, 0.4), 0 0 0 12px rgba(255, 255, 255, 0.4), 0 0 0 20px rgba(255, 255, 255, 0.4);
+    animation: shoot 4s linear infinite;
+}
+
+.star::before {
+    z-index: 10;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 280px;
+    height: 4px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #1d1d1d, transparent);
+}
+
+@keyframes animateBg {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% { 
+        transform: scale(1.2);
+    }
+}
+
+@keyframes shoot {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    60% {
+        /* transform: rotate(315deg) translateX(0); */
+        opacity: 0.7;
+    }
+    100% {
+        transform: rotate(315deg) translateX(-2400px);
+        /* opacity: 0; */
+    }
+}
+
+.star:nth-child(1) {
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+
+.star:nth-child(2) {
+    top: 0;
+    right: 120px;
+    left: initial;
+    animation-delay: 0.2;
+    animation-duration: 3s;
+}
+
+.star:nth-child(3) {
+    top: 40px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+.star:nth-child(4) {
+    top: 10px;
+    right: 180px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 2.5s;
+}
+
+.star:nth-child(5) {
+    top: -10px;
+    right: 280px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+.star:nth-child(6) {
+    top: 0;
+    right: 480px;
+    left: initial;
+    animation-delay: 0.3s;
+    animation-duration: 2.2s;
+}
+
+.star:nth-child(6) {
+    top: -20px;
+    right: 360px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 3s;
+}
+
+.star:nth-child(7) {
+    top: -10px;
+    right: 600px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 1.8s;
+}
+
+.star:nth-child(8) {
+    top: 0;
+    right: 120px;
+    left: initial;
+    animation-delay: .5s;
+    animation-duration: 2.3s;
+}
+
+.star:nth-child(9) {
+    top: 0;
+    right: 200px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 1.6s;
+}
+
+.star:nth-child(10) {
+    top: -40px;
+    right: 10px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+}

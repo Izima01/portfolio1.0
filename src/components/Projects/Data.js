@@ -11,7 +11,7 @@ import work10 from '../../assets/work10.png';
 
 export const projectsData = [
     {
-        id: 10,
+        id: 11,
         image: work10,
         title: 'RenCostume Web App',
         stack: ['React', 'Zustand', 'SupaBase'],
@@ -92,7 +92,7 @@ export const projectsData = [
         live: 'https://crappo-challengeizzy.netlify.app/'
     },
     {
-        id: 6,
+        id: 13,
         image: work6,
         title: 'Trivia App',
         stack: ['React', 'Redux Toolkit', 'React Swiper', 'Open Trivia API'],

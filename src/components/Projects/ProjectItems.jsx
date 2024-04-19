@@ -3,12 +3,13 @@ import { AiOutlineGithub } from 'react-icons/ai';
 
 const ProjectItems = ({ title, image, stack, description, github, live, id }) => {
     return (
-        <article className={`overflow-hidden flex gap-4 items-center flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-2 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full`}>
+        <article className={`overflow-hidden flex gap-4 items-center md:items-stretch flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-2 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full h-[21rem]`}>
             <img
                 width={560}
-                height={320}
+                // height={340}
                 loading='lazy'
                 src={image} alt={title}
+                className='h-full'
             />
             <div className="card_body w-full md:w-5/12 p-2">
                 <h3 className="text-2xl font-semibold text-black mb-4">{title}</h3>
