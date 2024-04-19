@@ -1,35 +1,27 @@
 .star {
     position: fixed;
-    z-index: 3;
+    z-index: 6;
     top: 50%;
     left: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: #080808;
-    border-radius: 50%;
-    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.4), 0 0 0 12px rgba(255, 255, 255, 0.4), 0 0 0 20px rgba(255, 255, 255, 0.4);
+    display: block;
     animation: shoot 4s linear infinite;
 }
 
+.star.stop {
+    display: none;
+}
+
 .star::before {
-    z-index: 10;
+    z-index: 3;
     content: '';
     position: absolute;
-    top: 50%;
+    top: 56%;
     left: 10px;
     width: 280px;
     height: 4px;
+    /* border-radius: 10%; */
     transform: translateY(-50%);
-    background: linear-gradient(90deg, #1d1d1d, transparent);
-}
-
-@keyframes animateBg {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% { 
-        transform: scale(1.2);
-    }
+    background: linear-gradient(90deg, #080808, transparent);
 }
 
 @keyframes shoot {
@@ -136,7 +128,8 @@
     .star:nth-of-type(1) {
         right: 0;
         animation-delay: 1.2s;
-        animation-duration: 1s;
+        animation-duration: 2.2s;
+        transform: rotate(200deg);
     }
     
     .star:nth-of-type(2) {
@@ -151,7 +144,7 @@
     
     .star:nth-of-type(4) {
         right: 120px;
-        animation-duration: 2.5s;
+        animation-duration: 4.5s;
     }
     
     .star:nth-of-type(5) {
@@ -162,31 +155,30 @@
     
     .star:nth-of-type(6) {
         top: -24px;
-        right: 220px;
-        animation-duration: 4.2s;
-    }
-    
-    .star:nth-of-type(7) {
-        right: -40px;
-        animation-duration: 3.4s;
-    }
-    
-    .star:nth-of-type(8) {
         right: -60px;
-        animation-duration: 3.8s;
-    }
-    
-    .star:nth-of-type(9) {
-        right: -120px;
         animation-duration: 3.2s;
     }
     
-    .star:nth-of-type(10) {
-        top: -20px;
-        right: 150px;
-        left: initial;
-        animation-delay: 1s;
+    .star:nth-of-type(7) {
+        right: -80px;
+        animation-duration: 3.8s;
+    }
+    
+    .star:nth-of-type(8) {
+        right: -140px;
+        animation-duration: 3s;
+    }
+    
+    .star:nth-of-type(9) {
+        right: -200px;
         animation-duration: 4s;
+    }
+    
+    .star:nth-of-type(10) {
+        top: -200px;
+        right: 150px;
+        animation-delay: 1s;
+        animation-duration: 3.3s;
     }
 }
 

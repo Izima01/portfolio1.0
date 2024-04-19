@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -10,17 +11,18 @@ import Skills from './components/Skills/Skills';
 import Stars from './components/Stars';
 
 function App() {
+  const [showStars, setshowStars] = useState(true);
 
   return (
     <>
-      <Header />
+      <Header setshowStars={setshowStars} showStars={showStars} />
       <main>
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
-        <Stars />
+        <Stars showStars={showStars}  />
       </main>
       <Footer />
       <ScrollUp />

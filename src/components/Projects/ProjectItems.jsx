@@ -6,15 +6,14 @@ const ProjectItems = ({ title, image, stack, description, github, live, id }) =>
         <article className={`overflow-hidden flex gap-4 items-center md:items-stretch flex-col md:flex-row border-b-slate-400 border-b-2 md:border-none pb-2 md:pb-0 ${id % 2 == 0 ? 'md:flex-row-reverse' : ''} w-full md:h-[21rem]`}>
             <img
                 width={560}
-                // height={340}
+                height={340}
                 loading='lazy'
                 src={image} alt={title}
-                className='h-full'
             />
             <div className="card_body w-full md:w-5/12 p-2">
                 <h3 className="text-2xl font-semibold text-black mb-4">{title}</h3>
                 <p className="text-[#757575] mb-2">{description}</p>
-                <ul className="flex gap-2.5 mb-6 flex-wrap">
+                <ul className="flex gap-2.5 mb-5 flex-wrap">
                     {stack.map((st, i) => (
                         <li className="px-4 text-sm py-1 bg-white rounded-md shadow-md shadow-slate-300" key={i}>{st}</li>
                     ))}

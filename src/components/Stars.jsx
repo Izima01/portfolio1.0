@@ -1,18 +1,40 @@
 import './Stars.css';
+import { IoIosStar } from "react-icons/io";
 
-const Stars = () => {
+// eslint-disable-next-line react/prop-types
+const Stars = ({ showStars }) => {
   return (
-    <> 
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span>
-      <span className='star'></span> 
+    <>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
+      <span className={showStars ? 'star' : 'star stop'}>
+        <IoIosStar size={20} color='#080808' />
+        </span>
     </>
   )
 }
