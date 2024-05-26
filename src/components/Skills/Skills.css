@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(120deg, #ddd 40%, #eeecec 100%);
+    background: linear-gradient(120deg, #ddd 30%, #eeecec 100%);
     background-size: 25% 25%;
     animation: moveGradient 5s linear infinite;
 }

@@ -23,7 +23,7 @@ const navs = [
 ];
 
 // eslint-disable-next-line react/prop-types
-const Header = ({ setshowStars, showStars }) => {
+const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [lower, setLower] = useState(false);
 
@@ -51,7 +51,6 @@ const Header = ({ setshowStars, showStars }) => {
                             </li>
                         )
                     })}
-                    <button onClick={() => setshowStars(pre => !pre)}>{showStars ? "Stop" : "Start"} Stars</button>
                 </ul>
                 <AiOutlineClose className='md:hidden block text-[#333333] font-medium absolute md:static right-6 bottom-4 cursor-pointer text-2xl hover:text-black' onClick={() => setShowMenu(false)} />
             </div>

@@ -16,13 +16,16 @@ function App() {
   return (
     <>
       <Header setshowStars={setshowStars} showStars={showStars} />
+      <button className='fixed right-4 top-16 rounded-xl w-12 h-12 text-sm  bg-slate-600 text-white' onClick={() => setshowStars(prev => !prev)}>
+          {showStars ? "Stop" : "Start"} Stars
+      </button>
       <main>
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
-        <Stars showStars={showStars}  />
+        <Stars showStars={showStars} />
       </main>
       <Footer />
       <ScrollUp />
