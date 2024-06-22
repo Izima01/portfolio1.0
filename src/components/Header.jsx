@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <header className={`w-full fixed md:top-0 bottom-0 md:bottom-[initial] top-[initial] left-0 bg-[#fafafa] z-10 ${lower ? 'scrollHeader' : ''}`}>
-        <nav className="max-w-[968px] mx-auto px-8 lg:px-0 flex justify-between items-center gap-x-4 h-12 md:h-[4.5rem]">
+        <nav className="max-w-[968px] mx-auto px-8 lg:px-0 flex justify-between items-center gap-x-4 h-12 md:h-[4rem]">
             <a href="/" className='text-[#994355] font-semibold text-xl uppercase'>Izima Obisike</a>
             <div className={`fixed md:static ${showMenu ? 'bottom-0' : '-bottom-full'} left-0 w-full md:w-auto pt-8 md:p-0 px-6 pb-16 nav_menu z-50 bg-white md:bg-transparent duration-500`}>
                 <ul className="md:flex grid grid-cols-3 gap-8 md:gap-x-8 list-none">
