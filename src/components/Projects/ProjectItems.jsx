@@ -19,10 +19,13 @@ const ProjectItems = ({ title, image, stack, description, github, live, id }) =>
                     ))}
                 </ul>
                 <div className='flex gap-6'>
-                    <a href={github} className='no-underline text-lg border border-slate-300 rounded-lg hover:bg-slate-600 hover:text-white py-1 px-2 bg-slate-200'>
-                        {/* Github */}
-                        <AiOutlineGithub className='text-3xl' />
-                    </a>
+                    {
+                        github && (
+                            <a href={github} className='no-underline text-lg border border-slate-300 rounded-lg hover:bg-slate-600 hover:text-white py-1 px-2 bg-slate-200'>
+                                <AiOutlineGithub className='text-3xl' />
+                            </a>
+                        )
+                    }
 
                     <a rel='noreferrer' target='_blank' href={live} className='inline-flex items-center no-underline text-lg border border-slate-200 bg-slate-500 rounded-lg hover:bg-slate-300 text-white hover:text-black px-5 py-1'>
                         Visit

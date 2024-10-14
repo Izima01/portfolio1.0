@@ -8,8 +8,19 @@ import work7 from '../../assets/work7.webp';
 import work8 from '../../assets/work8.webp';
 import work9 from '../../assets/work9.webp';
 import work10 from '../../assets/work10.png';
+import work11 from '../../assets/work 11.png';
+import work12 from '../../assets/work 12.png';
 
 export const projectsData = [
+    {
+        id: 12,
+        image: work12,
+        title: 'Travaye Web App',
+        stack: ['React', 'Tailwind', 'MongoDB', "Express", "NodeJS", "Notification API"],
+        description: 'A web app to browse, save, book outing locations in your area based on different categories and budgets',
+        github: '',
+        live: 'https://www.travaye.ng/'
+    },
     {
         id: 11,
         image: work10,
@@ -34,7 +45,7 @@ export const projectsData = [
         title: 'E-Learning App',
         stack: ['React', 'TailwindCSS', 'UseContext', 'MongoDB', 'Express JS', 'Node JS'],
         description: 'A full stack E-Learning app where you can find E-books, VIdeos and full on courses to learn and upskill.',
-        github: 'https://github.com/Izima01/',
+        github: '',
         live: 'https://mellow-longma-801e80.netlify.app/'
     },
     {
@@ -45,6 +56,24 @@ export const projectsData = [
         description: 'An E-commerce app for NFTs In the marketplace, you can sort and filter the products and add to cart',
         github: 'https://www.github.com/Izima01/artsy-marketplace',
         live: 'https://artsy-marketplace.netlify.app/'
+    },
+    {
+        id: 13,
+        image: work6,
+        title: 'Trivia App',
+        stack: ['React', 'Redux Toolkit', 'React Swiper', 'Open Trivia API'],
+        description: 'A quiz app with API gottr=en from an API which has different categories and difficulties of trivia questions. Countdown timer and scoring system',
+        github: 'https://github.com/Izima01/portfolio1.0',
+        live: 'https://izzys-trivia-app.netlify.app'
+    },
+    {
+        id: 12,
+        image: work11,
+        title: 'Grosvenor Services Website',
+        stack: ['React', 'Tailwind'],
+        description: 'A website for a company built in less a week',
+        github: '',
+        live: 'https://grosvenorservices.onrender.com/'
     },
     {
         id: 1,
@@ -90,14 +119,5 @@ export const projectsData = [
         description: 'A landing page for a cryptocurrency currency. One of my first projects on React',
         github: 'https://www.github.com/Izima01/Crappo',
         live: 'https://crappo-challengeizzy.netlify.app/'
-    },
-    {
-        id: 13,
-        image: work6,
-        title: 'Trivia App',
-        stack: ['React', 'Redux Toolkit', 'React Swiper', 'Open Trivia API'],
-        description: 'A quiz app with API gottr=en from an API which has different categories and difficulties of trivia questions. Countdown timer and scoring system',
-        github: 'https://github.com/Izima01/portfolio1.0',
-        live: 'https://izzys-trivia-app.netlify.app'
     },
 ];
