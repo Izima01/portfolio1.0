@@ -8,19 +8,19 @@ import work7 from '../../assets/work7.webp';
 import work8 from '../../assets/work8.webp';
 import work9 from '../../assets/work9.webp';
 import work10 from '../../assets/work10.png';
-import work11 from '../../assets/work 11.png';
-import work12 from '../../assets/work 12.png';
+// import work11 from '../../assets/work 11.png';
+// import work12 from '../../assets/work 12.png';
 
 export const projectsData = [
-    {
-        id: 12,
-        image: work12,
-        title: 'Travaye Web App',
-        stack: ['React', 'Tailwind', 'MongoDB', "Express", "NodeJS", "Notification API"],
-        description: 'A web app to browse, save, book outing locations in your area based on different categories and budgets',
-        github: '',
-        live: 'https://www.travaye.ng/'
-    },
+    // {
+    //     id: 12,
+    //     image: work12,
+    //     title: 'Travaye Web App',
+    //     stack: ['React', 'Tailwind', 'MongoDB', "Express", "NodeJS", "Notification API"],
+    //     description: 'A web app to browse, save, book outing locations in your area based on different categories and budgets',
+    //     github: '',
+    //     live: 'https://www.travaye.ng/'
+    // },
     {
         id: 11,
         image: work10,
@@ -66,15 +66,15 @@ export const projectsData = [
         github: 'https://github.com/Izima01/portfolio1.0',
         live: 'https://izzys-trivia-app.netlify.app'
     },
-    {
-        id: 12,
-        image: work11,
-        title: 'Grosvenor Services Website',
-        stack: ['React', 'Tailwind'],
-        description: 'A website for a company built in less a week',
-        github: '',
-        live: 'https://grosvenorservices.onrender.com/'
-    },
+    // {
+    //     id: 12,
+    //     image: work11,
+    //     title: 'Grosvenor Services Website',
+    //     stack: ['React', 'Tailwind'],
+    //     description: 'A website for a company built in less a week',
+    //     github: '',
+    //     live: 'https://grosvenorservices.onrender.com/'
+    // },
     {
         id: 1,
         image: work4,
